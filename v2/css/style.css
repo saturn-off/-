@@ -1,0 +1,217 @@
+@media all{
+	/* Напрямую для тегов */
+	html, body {
+		margin:0;
+		padding:0;
+	}
+	html{
+		height: 100%;
+	}
+	body{
+		background-color: white;
+		overflow-x: hidden;
+		height: 100%;
+	}
+	p, h1, h2, h3, h4, h5, h6 {
+		color:rgba(255,255,255,.8);
+	}
+	a {
+		cursor:default;
+	}
+	hr {
+		border-radius: 20px;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin:2%;
+		border:10px solid rgba(0,0,0,.2);
+	}
+	/* Классы */
+	.title_h3 {
+		margin-bottom: 1%;
+		text-align: center;
+		text-shadow: 0 5px 10px rgba(0,0,0,.5);
+	}
+	.about_me{
+		object-fit: cover;
+		margin:2%;
+		padding:1.5%;
+		padding-top:2%;
+		border:1px #4d4d4d solid;
+		box-shadow: 0 5px 10px rgba(0,0,0,1);
+		background: rgba(0,0,0,0.7);
+	}
+	.about_me .title_h3{
+		margin-bottom: 1%;
+		text-align: center;
+		color: rgba(250, 250, 250,.7);
+		text-shadow: 0 5px 10px rgba(0,0,0,.2);
+	}
+	.about_me h5{
+		color:rgba(250,250,250,.8);
+	}
+	.contacts {
+		box-shadow: 0 5px 10px rgba(0,0,0,1);
+		background: rgba(0,0,0,0.7);
+		padding-bottom: .2%;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	.contacts p {
+		margin-bottom: 1%;
+		margin-left:40%;
+		margin-right:40%;
+		text-align: center;
+	}
+	.contacts .link{
+		transition: .8s linear;
+		color:white;
+		cursor: pointer;
+		border-radius: 20px;
+	}
+	.contacts .link:hover{
+		transition: .8s linear;
+		color:black;
+		background: #0066ff;
+	}
+	.contacts .github img{
+		width:20%;
+	}
+	.contacts .discord img{
+		width:15%;
+	}
+	.projects{
+		position: static;
+		margin-left: 1.5%;
+		margin-right: 1.5%;
+		padding-bottom:10%;
+		text-align: center;
+	}
+	.projects .project_div{
+		box-shadow: 0 5px 10px rgba(0,0,0,1);
+		background: rgba(0,0,0,0.7);
+		min-height: 10%;
+		max-height: 10%;
+		position: relative;
+		font-size: 1.3vw;
+	}
+	.projects .title_h3 {
+		color:rgba(0,0,0,.7);
+		margin-bottom: 1%;
+		text-align: center;
+		text-shadow: 0 5px 10px rgba(0,0,0,.5);
+	}
+	.projects button {
+		border:0;
+		padding: 0;
+		color:white;
+		background: none;
+		transition: .3s;
+		width:48%;
+		font-size:2.8vh;
+		text-align: center;
+	}
+	.projects button:hover {
+		color:rgb(240,240,240);
+		background: rgba(0,0,0,0.5);
+	}
+	/* Айди */
+	#particles-js{
+		position: fixed;
+		top:0;
+		left:0;
+		width: 100%;
+		height: 100%;
+		z-index:1;
+	}
+	#wrapper {
+		position: relative;
+		display: table;
+		height: 100%;
+		z-index: 2;
+	}
+	#header {
+		width: 100%;
+		height: 30%;
+		padding-bottom:3%;
+	}
+	#header h2{
+		background: #000000;
+		line-height:200%;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		color: rgba(255, 255, 255,.7);
+		text-shadow: 0 5px 10px rgba(0,0,0,1);
+		box-shadow: 0 5px 10px rgba(0,0,0,1);
+		border-bottom:1px #4d4d4d solid;
+	}
+	#content{
+		display: table-row;
+		height: 100%;
+	}
+	#footer{
+		background: #000000;
+		box-shadow: 0 0px 20px rgba(0,0,0,1);
+		position: absolute;
+		width: 100%;
+		height: auto;
+	}
+	#footer h3{
+		color:rgba(255,255,255,.7);
+	}
+}
+@media (min-width:240px) and (max-width:480px){
+	.projects .project_div:hover{
+		border: 1px solid rgba(255, 255, 255, 0.3);
+		box-shadow: 0 10px 10px rgba(0, 0, 0, 0.9);
+		border-radius: 5px;
+		width: 80%;
+		margin-top: 5%;
+		margin-left: 10%;
+		margin-right: 2%;
+	}
+}
+@media (min-width:762px) and (max-width:1023px){
+	.projects .project_div:hover{
+		transform: scale(1.1);
+		box-shadow: 0 20px 30px rgba(0, 0, 0, 0.9);
+	}
+	.projects .project_div{
+		border: 1px solid rgba(255, 255, 255, 0.3);
+		box-shadow: 0 10px 10px rgba(0, 0, 0, 0.9);
+		border-radius: 5px;
+		width: 42%;
+		margin-top: 2%;
+		margin-left: 2%;
+		margin-right: 2%;
+		transition: 0.3s linear;
+		float: left;
+	}
+}
+@media (min-width:1024px){
+	.projects .project_div:hover{
+		transform: scale(1.05);
+		box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+	}
+	.projects .project_div{
+		border: 1px solid rgba(255, 255, 255, 0.3);
+		box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+		border-radius: 5px;
+		width: 25%;
+		margin-top: 2%;
+		margin-left: 2%;
+		margin-right: 2%;
+		transition: 0.3s linear;
+		float: left;
+	}
+}
+/*
+#text-decoration-gradient{
+	text-align: center;
+	display: inline;
+	background-repeat: no-repeat;
+	background-position: center bottom 1px;
+	background-size: 100% 3px;
+	background-image: linear-gradient(to right, red, orange, yellow, lime, cyan, blue, violet);
+}
+*/
